@@ -3,53 +3,52 @@
 @import "../styles/variables";
 
 body {
-  color: $black;
-  background-color: $greyWhite;
+  // color: $black;
+  // background-color: $greyWhite;
+  width: 370px;
+  height: 600px;
 }
 
 
-#popup {
-  // min-width: 350px;
-  // padding: 30px 20px;
-  width:300px;
-  height: 670px;
+.popupContainer {
+  width: 370px;
+  height: 600px;
+  // background: url("../assets/img/bg_login.png");
+}
 
-  h2 {
-    font-size: 25px;
-    text-align: center;
-  }
+#home_button,
+#home_button_two {
+  width: 75%;
+  font-weight: 500;
+  border-radius: 15px;
+  padding: 5px 10px;
+  justify-content: center;
+  margin: 20px auto;
+  cursor: pointer;
+  display: flex;
+  z-index: 3;
+}
 
-  #options__button {
-    width: 50%;
-    background: green;
-    color: white;
-    font-weight: 500;
-    border-radius: 15px;
-    padding: 5px 10px;
-    justify-content: center;
-    margin: 20px auto;
-    cursor: pointer;
-    opacity: 0.8;
-    display: flex;
-  }
+#home_button {
+  background-color: white;
+  color: #059FDD;
+  z-index: 3;
+}
 
-  .links__holder {
-    ul {
-      display: flex;
-      margin-top: 1em;
-      justify-content: space-around;
+#home_button_two {
+  background-color: #059FDD;
+  color: white;
+  border: 2px solid white;
+  z-index: 3;
+}
 
-      li {
-        button {
-          border-radius: 25px;
-          font-size: 20px;
-          font-weight: 600;
-          padding: 10px 17px;
-          background-color: rgba(0, 0, 255, 0.7);
-          color: white;
-          cursor: pointer;
-        }
-      }
-    }
-  }
+.home_screen_bg {
+  position: absolute;
+  background: #059fdd;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 2rem 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
 }
