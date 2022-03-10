@@ -3,9 +3,9 @@ import browser from "webextension-polyfill";
 import {Router, goTo} from "react-chrome-extension-router"
 // import Register from "../components/register/index.jsx"
 // import bg_home from "../assets/img/bg_login.png"
-import Register from '../components/Register/index.jsx';
-import Login from '../components/Login/index.jsx';
-import Import from '../components/Import/index.jsx';
+import Register from '../components/Register';
+import Login from '../components/Login';
+import Import from '../components/Import';
 
 import "./styles.scss";
 
@@ -17,11 +17,11 @@ const Popup = () => {
   return (
     <div className="popupContainer">
       <Router>
-      <div className="centralisedLogin">
-        {/* <div className="eurus_logo">
+      {/* <div className="centralisedLogin">
+        <div className="eurus_logo">
           <img src="../assets/img/Eurus_Vertical_logo.png" alt="logo" />
-        </div> */}
-      </div>
+        </div>
+      </div> */}
       <div className="home_screen_bg">
         <div style={{ textAlign: "center" }}>
           <button

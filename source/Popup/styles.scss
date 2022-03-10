@@ -6,14 +6,50 @@ body {
   // color: $black;
   // background-color: $greyWhite;
   width: 370px;
-  height: 600px;
+  min-height: 600px;
+  overflow-y: visible;
 }
 
+:is(ul, ol)>:not(li),
+a:is(:not([href]), [href=""], [href="#"]) {
+  outline: none;
+}
+
+.rowC {
+  display: flex;
+  flex-direction: row;
+}
+
+.centered{
+  text-align: center;
+}
+
+.ui.small.header {
+  padding: 20px;
+  background-image: url("../assets/img/centralized.png");
+  color: white;
+}
+
+.ui.form {
+  padding: 20px;
+}
 
 .popupContainer {
   width: 370px;
   height: 600px;
   // background: url("../assets/img/bg_login.png");
+}
+
+.layout {
+  width: 370px;
+  height: 600px;
+  background-color: white;
+  height: 90%;
+  bottom: 0;
+  left: 0;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  // background-image: url("../assets/img/centralized.png");
 }
 
 #home_button,
