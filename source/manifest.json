@@ -19,6 +19,8 @@
     "https://*/*"
   ],
 
+  "web_accessible_resources": ["assets/img/bg_login.png", "assets/img/Eurus_Vertical_logo.png"], 
+
   "content_security_policy": "script-src 'self'; object-src 'self'",
 
   "__chrome|firefox__author": "abhijithvijayan",

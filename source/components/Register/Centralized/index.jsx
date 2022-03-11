@@ -1,8 +1,19 @@
 import React from "react";
+import { goBack } from "react-chrome-extension-router";
+
+const Icon = {
+    position: "fixed",
+    top: 15,
+    left: 10,
+    fontSize: "25px",
+    color: "white",
+  };
+  
 
 const CentralizedRegister = () => {
   return (
     <div className="layout">
+        <i className="angle left icon" style={Icon} onClick={() => goBack()}></i>
       <div className="centered">
         <div className="ui small header">Register</div>
       </div>
@@ -14,7 +25,7 @@ const CentralizedRegister = () => {
           </div>
         </div>
         <div className="field">
-          <h3 className="ui dividing header">Login Password</h3>
+          <h5 className="ui dividing header">Login Password</h5>
           <div className="field">
             <label>Login Password</label>
             <input type="text" name="password" placeholder="Login Password" />
@@ -28,7 +39,7 @@ const CentralizedRegister = () => {
             />
           </div>
           <div className="field">
-            <h3 className="ui dividing header">Payment Password</h3>
+            <h5 className="ui dividing header">Payment Password</h5>
           </div>
           <div className="field">
             <label>Payment Password</label>

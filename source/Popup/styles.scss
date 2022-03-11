@@ -27,6 +27,7 @@ a:is(:not([href]), [href=""], [href="#"]) {
 .ui.small.header {
   padding: 20px;
   background-image: url("../assets/img/centralized.png");
+  // background-image: url("chrome-extension://__MSG_@@extension_id__/..assets/img/centralized.png");
   color: white;
 }
 
@@ -38,6 +39,7 @@ a:is(:not([href]), [href=""], [href="#"]) {
   width: 370px;
   height: 600px;
   // background: url("../assets/img/bg_login.png");
+  background-image: url("chrome-extension://__MSG_@@extension_id__/assets/img/bg_login.png");
 }
 
 .layout {
@@ -47,8 +49,8 @@ a:is(:not([href]), [href=""], [href="#"]) {
   height: 90%;
   bottom: 0;
   left: 0;
-  border-top-left-radius: 30%;
-  border-top-right-radius: 30%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   // background-image: url("../assets/img/centralized.png");
 }
 

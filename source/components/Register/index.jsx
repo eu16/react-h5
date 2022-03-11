@@ -5,8 +5,10 @@ import Decentralized from "../Register/Decentralized";
 
 const Icon = {
   position: "fixed",
-  top: 10,
+  top: 15,
   left: 10,
+  fontSize: '25px',
+  color: 'white'
 };
 
 
@@ -26,12 +28,8 @@ const cardSize = {
 const Register = () => {
   return (
     <div className="layout">
-      <button
-        className="ui icon button"
-        style={Icon}
-        onClick={() => goBack()}
-      />
-      <i class="angle left icon"></i>
+      <i class="angle left icon"  style={Icon}
+        onClick={() => goBack()}></i>
       <div className="centered">
         <div className="ui small header">Create Wallet</div>
       </div>

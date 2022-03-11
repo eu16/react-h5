@@ -8,14 +8,34 @@ const Icon = {
 };
 
 const Login = () => {
+
+  // const [email, setEmail] = useState([]);
+  // const [password, setPassword] = useState([]);
+
+  // useEffect(() => {}, []);
+
+  // function loginApi() {
+  //   const fetchData = async () => {
+  //     setLoading(true);
+  //     try {
+  //       const loginBySignatureResult = await loginBySignature(email, password);
+  //       if (loginBySignatureResult && loginBySignatureResult.returnCode === 0) {
+  //         window.alert("Signed in")
+  //       }
+  //     } catch (error) {
+  //       console.error(error.message);
+  //     }
+  //   };
+  // }
+
   return (
     <div className="layout">
-      <button className="ui icon button" style={Icon} onClick={() => goBack()} />
+      {/* <button className="ui icon button" style={Icon} onClick={() => goBack()} />
         <i class="angle left icon"></i>
       </button>
       <div className="centered">
         <div className="ui small header">Login</div>
-      </div>
+      </div> */}
       <form className="ui form">
         <div className="field">
           <label>Email</label>
@@ -29,12 +49,13 @@ const Login = () => {
         <button id="home_button_two" type="submit">
           Login
         </button>
-      </form>
+  
       <div className="centered">
         <p>
           Don't have an account? <a href=""> Register</a>
         </p>
       </div>
+      </form>
     </div>
   );
 };
