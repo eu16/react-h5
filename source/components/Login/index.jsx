@@ -1,14 +1,17 @@
 import React from "react";
-import goBack from 'react-chrome-extension-router';
+import { goBack } from "react-chrome-extension-router";
+import { useEffect } from "react/cjs/react.production.min";
+import { loginBySignature } from "../../api/api.js";
 
 const Icon = {
   position: "fixed",
-  top: 10,
+  top: 15,
   left: 10,
+  fontSize: "25px",
+  color: "white",
 };
 
 const Login = () => {
-
   // const [email, setEmail] = useState([]);
   // const [password, setPassword] = useState([]);
 
@@ -30,12 +33,10 @@ const Login = () => {
 
   return (
     <div className="layout">
-      {/* <button className="ui icon button" style={Icon} onClick={() => goBack()} />
-        <i class="angle left icon"></i>
-      </button>
+      <i className="angle left icon" style={Icon} onClick={() => goBack()}></i>
       <div className="centered">
         <div className="ui small header">Login</div>
-      </div> */}
+      </div>
       <form className="ui form">
         <div className="field">
           <label>Email</label>
@@ -46,15 +47,14 @@ const Login = () => {
           <input type="text" name="password" placeholder="Enter Password" />
         </div>
         <a>Forgot Password</a>
-        <button id="home_button_two" type="submit">
+        <button id="home_button_two" type="submit" onClick={() => loginApi()} >
           Login
         </button>
-  
-      <div className="centered">
-        <p>
-          Don't have an account? <a href=""> Register</a>
-        </p>
-      </div>
+        <div className="centered">
+          <p>
+            Don't have an account? <a href=""> Register</a>
+          </p>
+        </div>
       </form>
     </div>
   );
