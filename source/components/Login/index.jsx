@@ -40,11 +40,11 @@ const Login = () => {
       <form className="ui form">
         <div className="field">
           <label>Email</label>
-          <input type="text" name="email" placeholder="Enter Email" />
+          <input type="text" value={email} placeholder="Enter Email" onChange={(e) => setName(e.target.value)}/>
         </div>
         <div className="field">
           <label>Login Password</label>
-          <input type="text" name="password" placeholder="Enter Password" />
+          <input type="text" value={password} placeholder="Enter Password" onChange={(e) => setName(e.target.value)}/>
         </div>
         <a>Forgot Password</a>
         <button id="home_button_two" type="submit" onClick={() => loginApi()} >
